@@ -1,0 +1,44 @@
+{"frames": {
+
+"game_over.png":
+{
+	"frame": {"x":0,"y":0,"w":483,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":483,"h":101},
+	"sourceSize": {"w":483,"h":101}
+},
+"panel.png":
+{
+	"frame": {"x":262,"y":141,"w":569,"h":287},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":569,"h":287},
+	"sourceSize": {"w":569,"h":287}
+},
+"play.png":
+{
+	"frame": {"x":0,"y":141,"w":262,"h":147},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":262,"h":147},
+	"sourceSize": {"w":262,"h":147}
+},
+"ranking.png":
+{
+	"frame": {"x":483,"y":0,"w":260,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":260,"h":141},
+	"sourceSize": {"w":260,"h":141}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "over.png",
+	"format": "RGBA8888",
+	"size": {"w":831,"h":428},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:138d36ae99b2ebb9c8f8aa82294c3d91:d8e26fa6cab28b2098040b5fd8d7aba6:22a6293b647a78df61a6fd059ad0b7ab$"
+}
+}

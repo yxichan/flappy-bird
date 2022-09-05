@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      border: 0;
+      font-size: 36px;
+    }
+    .nice {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      font-size: 36px;
+    }
+    input {
+      margin: 0 10px;
+      font-size: 36px;
+      width: 100px;
+      border: 2px solid rgb(58, 58, 58);
+    }
+    button {
+      margin: 0 10px;
+      border: 2px solid rgb(58, 58, 58);
+    }
+    p {
+      font-size: 14px;
+      user-select: none;
+    }
+    Progress {
+      width: 750px;
+      transition: all 1.5s linear;
+    }
+    #debugger> canvas {
+      width: 375px !important;
+    }
+    #debugger, #canvas {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas width="750" height="1000" id="canvas" style="width: 375px"></canvas>
+  <div id="debugger" style="width: 375px;display: inline;"></div>
+  <p>资源加载进度：</p>
+  <Progress id="progress" value="0" max="1"></Progress>
+  <script src="//cdn.bootcdn.net/ajax/libs/eventemitter3/3.1.2/index.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
