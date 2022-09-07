@@ -2,8 +2,8 @@ import { GameObject } from "@eva/eva.js";
 import { Sprite } from "@eva/plugin-renderer-sprite";
 import { Physics, PhysicsType } from "@eva/plugin-matterjs";
 
-import BarMove from "./../component/barmove";
-import BarNext from "./../component/barnext";
+import BarMove from "../component/barMove";
+import BarNext from "../component/barNext";
 
 import store from "./../store";
 

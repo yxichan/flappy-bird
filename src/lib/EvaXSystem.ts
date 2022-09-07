@@ -81,7 +81,12 @@ export default class EvaXSystem extends System<EvaXSystemParams> {
   }
   lateUpdate() {
     for (const item of this.changeList) {
-      this.ee.emit(item.key, this.store[item.key.split(".")[1]], item.oldStore);
+      const list = item.key.split(".");
+      let value: any = this;
+      for (let i = 0; i < list.length; i++) {
+        value = value[list[i]];
+      }
+      this.ee.emit(item.key, value, item.oldStore);
     }
     this.changeList = [];
   }

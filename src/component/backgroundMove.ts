@@ -7,8 +7,7 @@ class BackgroundMove extends Component {
   gameObject: GameObject;
   tilePositionX: number;
   static componentName: "BackgroundMove";
-  constructor(tilePositionX: number) {
-    super();
+  init(tilePositionX: number) {
     this.tilePositionX = tilePositionX;
   }
   update(): void {

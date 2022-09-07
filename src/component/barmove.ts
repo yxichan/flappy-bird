@@ -1,15 +1,12 @@
-import { Component } from "@eva/eva.js";
+import { Component, GameObject } from "@eva/eva.js";
 import { Physics } from "@eva/plugin-matterjs";
 import Matter from "matter-js";
 
-import store from "./../store";
+import store from "../store";
 
-export default class Move extends Component {
-  gameObject: any;
-  static componentName = "move";
-  constructor() {
-    super();
-  }
+export default class BarMove extends Component {
+  gameObject: GameObject;
+  static componentName = "barMove";
   update() {
     const physics = this.gameObject.getComponent(Physics);
     if (store.game && physics.body) {

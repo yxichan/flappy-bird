@@ -18,8 +18,6 @@ export function defineProperty(
     return;
   }
 
-  console.log(_defineCache);
-
   _defineCache.get(store).push(key);
 
   const props = key.split(".");
@@ -53,10 +51,10 @@ export function defineProperty(
   Object.defineProperty(obj, props[length - 1], {
     set(val) {
       // const oldStore = cloneDeep(originStore);
-      const oldStore = originStore[key];
-      console.log(oldStore, originStore);
+      const oldValue = cloneDeep(obj[`_${props[length - 1]}`]);
       obj[`_${props[length - 1]}`] = val;
-      callback(originKey, oldStore);
+      // callback(originKey, oldStore);
+      callback(originKey, oldValue);
 
       if (deep && isObject(val)) {
         _defineCache.delete(obj);

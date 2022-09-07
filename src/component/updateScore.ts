@@ -5,9 +5,6 @@ import { Text } from "@eva/plugin-renderer-text";
 class UpdateScore extends Component {
   gameObject: GameObject;
   static componentName: "UpdateScore";
-  constructor() {
-    super();
-  }
   // 若evax使用官方版本，则用update来更新分数
   // update(frame: UpdateParams): void {
   // this.gameObject.getComponent(Text).text = "得分: " + store.score;

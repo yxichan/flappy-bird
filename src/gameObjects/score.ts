@@ -1,5 +1,6 @@
 import { GameObject } from "@eva/eva.js";
 import { EvaX } from "./../lib";
+// import { EvaX } from "@eva/plugin-evax";
 import { Text } from "@eva/plugin-renderer-text";
 
 import store from "./../store";
@@ -47,7 +48,7 @@ export default () => {
   score.addComponent(
     new EvaX({
       events: {
-        "store.score"(store: number, oldStore: number) {
+        "store.score"(store: any, oldStore: any) {
           console.log("listen", store, oldStore);
           score.getComponent(UpdateScore).updateScore(store);
         },
